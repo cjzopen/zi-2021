@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>立法院資訊服務管理系統</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
+  <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<div id="top_all">
+  <header id="header">
+    <div class="header-left">
+      <img id="logo" src="img/logo.png" alt="資訊服務管理系統">
+      <img class="d-none d-lg-inline" src="img/banner-icon.svg" alt="*">
+    </div>
+    <div class="header-right d-none d-md-flex">
+      <div class="header-menu text-center pt-3">
+        <a class="d-flex align-items-center ml-3 active" href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><g fill="#4280e5"><path d="M21.188 3.227H4.24a1.421 1.421 0 00-1.419 1.419v10.271a1.421 1.421 0 001.419 1.419h6.006v2.2H7.628a.729.729 0 00-.729.729v1.052a.729.729 0 00.729.729H17.8a.728.728 0 00.728-.729v-1.052a.729.729 0 00-.728-.729h-2.618v-2.2h6.006a1.421 1.421 0 001.419-1.419V4.646a1.421 1.421 0 00-1.419-1.419zM4.202 14.917L4.24 4.608l16.987.038v10.309z"/><path d="M10.744 11.54a.354.354 0 00.353-.089l.953-.953 2.232 2.231a.355.355 0 00.5 0l.881-.88a.352.352 0 000-.5l-2.232-2.232.954-.955a.356.356 0 00.09-.35.363.363 0 00-.267-.243l-4.122-.832a.352.352 0 00-.415.415l.832 4.12a.354.354 0 00.241.268z"/></g></svg>案件申請</a>
+        <a class="d-flex align-items-center ml-3" href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><g fill="#656464"><path d="M12.934 22.707a.618.618 0 01-.607-.725l.436-2.473a.621.621 0 01.171-.329l6.111-6.11a1.255 1.255 0 011.891-.145l1.018 1.018a1.441 1.441 0 010 2.037l-6.11 6.11a.608.608 0 01-.33.171l-2.473.436a.584.584 0 01-.107.01zm2.473-1.054z"/><path d="M14.351 2.956H4.887a2.262 2.262 0 00-2.264 2.263v12.756a2.262 2.262 0 002.264 2.263h6.073l.182-1.012a2.269 2.269 0 01.407-.951h-6.3a.853.853 0 01-.85-.851V5.77a.853.853 0 01.85-.851h8.731a.853.853 0 01.85.851v9.184l1.78-1.777V5.219a2.262 2.262 0 00-2.259-2.263z"/><path d="M6.818 7.341h3.292a.823.823 0 010 1.646H6.818a.823.823 0 110-1.646z"/><path d="M10.936 15.574H6.821a.823.823 0 110-1.646h4.115a.823.823 0 110 1.646z"/><path d="M12.808 12.282h-5.99a.823.823 0 110-1.646h5.99a.823.823 0 010 1.646z"/></g></svg>ISMS表單申請</a>
+        <a class="d-flex align-items-center ml-3" href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><g><path d="M14.394 16.93a.3.3 0 01.363.049l3.61 3.61a1.652 1.652 0 002.365.253l.11-.11a1.652 1.652 0 00-.253-2.365l-3.618-3.618a.3.3 0 01-.041-.355 6.953 6.953 0 00-1.067-8.558A7.091 7.091 0 105.835 15.864a6.952 6.952 0 008.559 1.066zm-7.248-2.376a5.239 5.239 0 117.409 0 5.246 5.246 0 01-7.409.003z" fill="#656464"/><g><path d="M13.428 9.982a3.147 3.147 0 00-4.12-1.67.732.732 0 11-.57-1.348 4.613 4.613 0 016.038 2.448.732.732 0 11-1.348.57z" fill="#656464"/></g></g></svg>案件查詢</a>
+      </div>
+      <img class="d-none d-lg-inline" src="img/banner-icon-3.png" alt="*">
+    </div>
+  </header>
+  <div id="wrapper">
+    <nav id="menu">
+      <ul>
+        <li><a href="">資訊服務管理平台</a></li>
+        <li class="active"><a href="">案件服務功能</a></li>
+        <li><a href="">服務品質管理</a></li>
+        <li><a href="">服務系統設定</a></li>
+        <li><a href="">報表查詢</a></li>
+        <li><a href="">重大訊息公告</a></li>
+        <li><a href="">系統維護</a></li>
+      </ul>
+    </nav>
+    <div id="content" class="p-4">
+      <div>
+        <div class="title"></div>
+        <div class="swiper-container" id="circle-progress-area">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="circle-progress-box bg-white pb-3">
+                <div class="circle-progress-box-header p-2 color-green">立院app</div>
+                <div class="donut-wrapper">
+                  <svg viewBox="0 0 42 42" class="donut">
+                    <circle class="donut-hole" cx="21" cy="21" r="16" fill="#fff"></circle>
+                    <circle class="donut-ring" cx="21" cy="21" r="16" fill="transparent" stroke="#d2d3d4" stroke-width="4"></circle>
+                    <circle class="donut-segment donut-segment-1" cx="21" cy="21" r="16" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+                    <circle class="donut-segment donut-segment-2" cx="21" cy="21" r="16" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
+                    <circle class="donut-segment donut-segment-3" cx="21" cy="21" r="16" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>
+                    <circle class="donut-segment donut-segment-4" cx="21" cy="21" r="16" stroke-dasharray="10 90" stroke-dashoffset="35"></circle>
+                    <!-- 偏移量 = dashoffset -->
+                    <!-- 公式：周長 - 所有先前分段的總長度 + 第一分段的偏移量 = 當前分段的偏移量 -->
+                    <!-- 上述的說明如下： -->
+                    <!-- 全長為 100 -->
+                    <!-- 第一段佔 40%，因為它是從3點鐘方向開始，要回偏25%回12點鐘的地方，所以偏移量= 25(25%) -->
+                    <!-- 第二段佔 20%，偏移量 = 100 - 40 + 25 -->
+                    <!-- 第三段佔 30%，偏移量 = 100 - (40+20) + 25 -->
+                  </svg>
+                  <div class="donut-value">
+                    <div class="text-decoration-underline"><small>累計結案數</small></div>
+                    <div>100</div>
+                  </div>
+                  <div class="p-3 d-flex">
+                    <div class="col-4-1 d-flex align-items-center justify-content-center">
+                      <div class="flex-shrink-0">
+                        <svg viewBox="0 0 20 20" width="10" height="10">
+                          <circle r="10" cx="10" cy="10" fill="var(--btn-color)"></circle>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-decoration-underline h6">逾期</div>
+                        <div class="h1">40</div>
+                      </div>
+                    </div>
+                    <div class="col-4-1 d-flex align-items-center justify-content-center">
+                      <div class="flex-shrink-0">
+                        <svg viewBox="0 0 20 20" width="10" height="10">
+                          <circle r="10" cx="10" cy="10" fill="var(--donut-color-1)"></circle>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-decoration-underline h6">本日新增</div>
+                        <div class="h1">20</div>
+                      </div>
+                    </div>
+                    <div class="col-4-1 d-flex align-items-center justify-content-center">
+                      <div class="flex-shrink-0">
+                        <svg viewBox="0 0 20 20" width="10" height="10">
+                          <circle r="10" cx="10" cy="10" fill="var(--donut-color-2)"></circle>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-decoration-underline h6">本日已結</div>
+                        <div class="h1">30</div>
+                      </div>
+                    </div>
+                    <div class="col-4-1 d-flex align-items-center justify-content-center">
+                      <div class="flex-shrink-0">
+                        <svg viewBox="0 0 20 20" width="10" height="10">
+                          <circle r="10" cx="10" cy="10" fill="var(--donut-color-3)"></circle>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-decoration-underline h6">本日未結</div>
+                        <div class="h1">10</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">即時新聞發佈 <span class="color-orange">(3)</span></div>
+        <table class="table-striped table table-fixed">
+          <tbody>
+            <tr>
+              <td width="30"><img src="img/news.svg" alt="*"></td>
+              <td>
+                <div class="text-ellipsis">本院酬酢品線上申辦系統將於109/12/4(五)晚間6:30至7:30暫停服務，進行系統維護，造成不便，敬請見諒！本院酬酢品線上申辦系統將於109/12/4(五)晚間6:30至7:30暫停服務，進行系統維護，造成不便，敬請見諒！</div>
+              </td>
+            </tr>
+            <tr>
+              <td width="30"><img src="img/news.svg" alt="*"></td>
+              <td>
+                <div class="text-ellipsis">「行政要中立，國家更安定。立法院人事處提醒您。」「公務人員應懷抱同理心，尊重多元文化，落實人權保障~立法院人事處~」</div>
+              </td>
+            </tr>
+            <tr>
+              <td width="30"><img src="img/news.svg" alt="*"></td>
+              <td>
+                <div class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾－本院性騷擾申訴專線：02-23585398、國會助理工會性騷擾諮詢專線：0968052912～立法院性別平等委員會關心您～</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+      <div class="mt-5">
+        <div class="title">追蹤項目<span class="color-orange">(3)</span></div>
+        <div class="table-responsive">
+          <table class="table-striped table">
+            <thead>
+              <tr>
+                <th>案件編號</th>
+                <th>目前處理流程</th>
+                <th>問題類別</th>
+                <th>申請人</th>
+                <th>申請人電話</th>
+                <th>表單名稱</th>
+                <th>處理人員</th>
+                <th>問題描述</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+      <div class="mt-5">
+        <div class="title">一般叫修</div>
+        <form class="rounded bg-white p-3" action="">
+          <table class="table-striped table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap bg-green color-white">申請人*</th>
+                <td>
+                  <div class="d-flex flex-wrap">
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">單位：</label>
+                      <input class="w-300px" type="text" value="ZOZO 碧空政" disabled>
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">員工編號：</label>
+                      <input class="w-300px" type="text" value="ZOZO1223" disabled>
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">姓名：</label>
+                      <input class="w-300px" type="text" value="碧空政" disabled>
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">電話：</label>
+                      <input class="w-300px" type="text" value="25221351">
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">傳真：</label>
+                      <input class="w-300px" type="text" value="23412364" disabled>
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="text-nowrap d-block" for="">Email：</label>
+                      <input class="w-300px" type="text" value="aer@example.com" disabled>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">叫修服務*</th>
+                <td>
+                  <div>
+                    <label for="repair-service-hard"><input type="radio" name="repair_service" id="repair-service-hard">電腦維修</label>
+                    <label for="repair-service-app"><input type="radio" name="repair_service" id="repair-service-app">應用系統</label>
+                  </div>
+                  <div class="d-lg-flex align-items-center">
+                    <label class="flex-shrink-0 text-nowrap" for="">應用系統叫修類別：</label>
+                    <select name="" id="" class="select">
+                      <option data-placeholder="true"></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">問題描述*</th>
+                <td>
+                  <textarea class="w-100" name="" id="" rows="10"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">備註</th>
+                <td>
+                  <input type="text" class="w-100">
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">上傳檔案</th>
+                <td>
+                  <div class="d-flex">
+                    <label class="input-file w-100" for="input-file-1111111111111">
+                      <input class="d-none" type="file" name="" id="input-file-1111111111111">
+                      <div class="input-file-name"></div>
+                      <div class="input-file-button">+瀏覽</div>
+                    </label>
+                  </div>
+                  <div class="text-right pt-2">
+                    <button class="btn flex-shrink-0" type="">上傳檔案</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="p-4 text-center">
+            <button class="btn">確認申請</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">服務申請(ISMS表單)</div>
+        <form class="rounded bg-white p-3" action="">
+          <table class="table-striped table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap bg-green color-white">申請人*</th>
+                <td>
+                  <div class="d-flex flex-wrap">
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">單位：</label>
+                      <div class="d-md-fle">
+                        <select name="" id="" class="select w-300px">
+                          <option data-placeholder="true"></option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">444444444444444444444444444444444444444444444444444444444444</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <button class="btn mt-2">非正式編制單位</button>
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">員工編號：</label>
+                      <input class="w-300px" type="text">
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">姓名：</label>
+                      <input class="w-300px" type="text">
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">電話：</label>
+                      <input class="w-300px" type="text">
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">傳真：</label>
+                      <input class="w-300px" type="text">
+                    </div>
+                    <div class="col-1-1 col-lg-2-1 p-1">
+                      <label class="d-block text-nowrap" for="">Email：</label>
+                      <input class="w-300px" type="text">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">選擇ISMS表單*</th>
+                <td>
+                  <select name="" id="" class="select">
+                    <option data-placeholder="true"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">勾選系統*</th>
+                <td>
+                  <select name="" id="" class="select">
+                    <option data-placeholder="true"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">申請日期*</th>
+                <td>
+                  <div class="d-flex">
+                    <input type="text" class="w-100 border-radius-0">
+                    <button class="btn flex-shrink-0 border-radius-0"><img src="img/calendar.svg" width="14" height="14" alt=""></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">上傳檔案</th>
+                <td>
+                  <div class="d-flex">
+                    <label class="input-file w-100" for="input-file-222222222222222222">
+                      <input class="d-none" type="file" name="" id="input-file-222222222222222222">
+                      <div class="input-file-name"></div>
+                      <div class="input-file-button">+瀏覽</div>
+                    </label>
+                  </div>
+                  <div class="text-right pt-2">
+                    <button class="btn" type="">上傳檔案</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">是否優先處理</th>
+                <td>
+                  <label for=""><input type="checkbox">是</label>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">簽核人員</th>
+                <td>
+                  <select name="" id="" class="select">
+                    <option data-placeholder="true"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <div class="d-flex justify-content-end pt-2 flex-wrap">
+                    <div class="flex-shrink-0 h6 ml-2" style="line-height:1;"><div>承辦人送科長簽核</div><div>無須指定簽核人員</div></div>
+                    <button class="btn flex-shrink-0 ml-2" type="">指定簽核人員</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="p-4 text-center">
+            <button class="btn m-2">線上申請</button>
+            <button class="btn m-2">紙本申請</button>
+            <button class="btn m-2">電話結案</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">服務案件申請簽核<span class="color-orange">(2)</span></div>
+        <div class="table-small-responsive">
+          <table class="table-striped table">
+            <thead>
+              <tr>
+                <th>單號</th>
+                <th>申請人</th>
+                <th>申請時間</th>
+                <th>預計完成時間</th>
+                <th>申請人系統</th>
+                <th width="22"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2sdafd3</td>
+                <td>申請人</td>
+                <td>109/11/1 18:40</td>
+                <td>109/12/10 14:00</td>
+                <td>應用系統服務</td>
+                <td>
+                  <a href="#" class="tr-more-button"><img width="20" height="20" src="img/slideup.svg" alt="詳細"></a>
+                </td>
+              </tr>
+              <tr class="tr-more-content bg-white border-left-blue">
+                <td colspan="6">
+                  <form>
+                    <div class="d-flex flex-wrap">
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">表單名稱</div>
+                        <ul>
+                          <li>立法院應用系統服務申請單</li>
+                          <li>立法院系統上線暨維護申請紀錄表</li>
+                        </ul>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">問題性質</div>
+                        <div>程式異動</div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">申請（決行）人員</div>
+                        <div>張鮭魚</div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">受理系統名稱</div>
+                        <div>人事、會計及薪資整合管理系統</div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">問題描述</div>
+                        <div>全院設定特定日期之值班班表刪除</div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-md-3-1 col-lg-4-1">
+                        <div class="h6 color-blue">勾選問題</div>
+                        <div>lorem</div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-lg-2-1">
+                        <div class="h6 color-blue">簽核人員</div>
+                        <div class="d-flex">
+                          <select name="" id="" class="select">
+                            <!-- <option data-placeholder="true"></option> -->
+                            <option value="一二三">一二三</option>
+                            <option value="246">246</option>
+                          </select>
+                          <button class="btn flex-shrink-0 ml-4">指定簽核人員</button>
+                        </div>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-lg-4-1">
+                        <div class="h6 color-blue">處理情形</div>
+                        <select name="" id="" class="select">
+                          <!-- <option data-placeholder="true"></option> -->
+                          <option value="同意並呈指定簽核人員（會辦）">同意並呈指定簽核人員（會辦）</option>
+                          <option value="不同意">不同意</option>
+                        </select>
+                      </div>
+                      <div class="pr-2 pb-2 col-1-1 col-lg-4-3">
+                        <div class="h6 color-blue">滿意度</div>
+                        <label for="satisfaction-1-1"><input type="radio" name="satisfaction-1" id="satisfaction-1-1">很滿意</label>
+                        <label for="satisfaction-1-2"><input type="radio" name="satisfaction-1" id="satisfaction-1-2">滿意</label>
+                        <label for="satisfaction-1-3"><input type="radio" name="satisfaction-1" id="satisfaction-1-3">不滿意</label>
+                        <label for="satisfaction-1-4"><input type="radio" name="satisfaction-1" id="satisfaction-1-4">很不滿意</label>
+                      </div>
+                    </div>
+                    <div class="text-center p-4">
+                      <button class="btn">確定</button>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">服務申請明細</div>
+        <div class="rounded bg-white p-3">
+          <table class="table-striped table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap bg-green color-white">案件編號</th>
+                <td>I1081xxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">申請人</th>
+                <td>
+                  <div class="d-md-flex">
+                    <div>申請人：營繕科（保管）</div>
+                    <div>傳真：5555</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">系統名稱</th>
+                <td>行政業務管理系統</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">使用地點</th>
+                <td>一樓營繕保管股</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">問題（補充）描述</th>
+                <td>原物品領用於一小時內列印時，該物品會重複顯示。現請系統更改為只列印當下領用的物品，就不再重複顯示一小時內領用的物品。</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">勾選問題</th>
+                <td>功能需求</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">備註</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">處理結果</th>
+                <td>經查證，應於列印後，又新增一筆資料，導致報表將兩筆資料一併列印出來。（查詢結果可參考附件一、二）</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap bg-green color-white">ISMS表單版本</th>
+                <td>ISMS-1000-C05-D01 立法院應用系統服務申請單 v3.6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">上傳檔案列表</div>
+        <table class="table-striped table">
+          <thead>
+            <tr>
+              <th>項次</th>
+              <th>檔案名稱</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><a class="color-blue" href="">附件一.jpg</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a class="color-blue" href="">附件一.jpg</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a class="color-blue" href="">附件一.jpg</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">歷史流程</div>
+        <table class="table-striped table">
+          <thead>
+            <tr>
+              <th>處理人</th>
+              <th>處理狀態</th>
+              <th>系統接收時間</th>
+              <th>處理時間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>章魚燒球</td>
+              <td>登錄中</td>
+              <td>109/11/1 18:40</td>
+              <td>109/12/10 14:00</td>
+            </tr>
+            <tr>
+              <td>章魚燒球</td>
+              <td>已申請（同意）</td>
+              <td>109/11/1 18:40</td>
+              <td>109/12/10 14:00</td>
+            </tr>
+            <tr>
+              <td>一二三</td>
+              <td>已同意（決行）</td>
+              <td>109/11/1 18:40</td>
+              <td>109/12/10 14:00</td>
+            </tr>
+            <tr>
+              <td>章魚燒球</td>
+              <td>已同意（同意）</td>
+              <td>109/11/1 18:40</td>
+              <td>109/12/10 14:00</td>
+            </tr>
+            <tr>
+              <td>章魚燒球</td>
+              <td>處理中（接收）</td>
+              <td>109/11/1 18:40</td>
+              <td>109/12/10 14:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">綜合查詢作業</div>
+        <form class="pt-3 pb-3" action="">
+          <div class="d-flex flex-wrap">
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">問題類別：</label>
+              <select name="" id="" class="select w-240px">
+                <option data-placeholder="true"></option>
+                <option value="人事、會計及薪資整合管理系統">人事、會計及薪資整合管理系統</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">問題性質：</label>
+              <select name="" id="" class="select w-240px">
+                <option data-placeholder="true"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">問題描述：</label>
+              <input class="w-240px" type="text">
+            </div>
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">表單類型：</label>
+              <select name="" id="" class="select w-240px">
+                <option data-placeholder="true"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">申請人姓名：</label>
+              <input class="w-240px" type="text">
+            </div>
+            <div class="pr-2 pb-2 col-1-1 col-md-2-1 col-lg-3-1">
+              <label class="d-block text-nowrap" for="">服務申請單號：</label>
+              <input class="w-240px" type="text">
+            </div>
+            <div class="pr-2 pb-2 col-3-3">
+              <label class="d-block text-nowrap" for="">建單日期：</label>
+              <div class="d-md-flex">
+                <div class="d-flex">
+                  <input type="text" class="w-240px border-radius-0">
+                  <button class="btn flex-shrink-0 border-radius-0"><img src="img/calendar.svg" width="14" height="14" alt=""></button>
+                </div>
+                <div class="pl-2 pr-2 text-center">至</div>
+                <div class="d-flex">
+                  <input type="text" class="w-240px border-radius-0">
+                  <button class="btn flex-shrink-0 border-radius-0"><img src="img/calendar.svg" width="14" height="14" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center p-3">
+            <button class="btn m-2">查詢</button>
+            <button class="btn m-2">清除</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <div class="title">查詢結果<span class="color-orange">(36)</span></div>
+        <div class="table-responsive">
+          <table class="table-striped table" id="search-result">
+            <thead>
+              <tr>
+                <th>案件編號</th>
+                <th>目前處理流程</th>
+                <th>問題類別</th>
+                <th>申請人</th>
+                <th>申請人電話</th>
+                <th>表單名稱</th>
+                <th>處理人員</th>
+                <th>問題描述</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="blue-tr">
+                <td>1</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>10</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>11</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>12</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>20</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>22</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>29</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>31</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="blue-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">申請</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="green-tr">
+                <td>sdafd3</td>
+                <td><div class="type-circle">受理簽核</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+              <tr class="orange-tr">
+                <td>36</td>
+                <td><div class="type-circle">結案</div></td>
+                <td>問題類別問題類別</td>
+                <td>申請人</td>
+                <td>0987654321</td>
+                <td>表單名稱表單名稱 表單名稱</td>
+                <td>處理人</td>
+                <td><div style="width:280px;" class="text-ellipsis toggle-ellipsis" data-toggle-class="text-ellipsis">營造性別友善環境，守護你我，拒絕性騷擾營造性別友善環境，守護你我，拒絕性騷擾</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="p-3 text-center">
+          <div id="pagination1" class="tui-pagination"></div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" defer></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js" defer></script>
+<script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js" defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> -->
+<script src="js/script.js" defer></script>
+</body>
+</html>
