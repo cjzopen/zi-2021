@@ -3,23 +3,28 @@
 ``
 <svg viewBox="0 0 42 42" class="donut">  
 ``
-中間的洞
+<br>
+中間的洞<br>
 ``
   <circle class="donut-hole" cx="21" cy="21" r="16" fill="#fff"></circle>  
 ``
-圓環的背景
+<br>
+圓環的背景<br>
 ``
   <circle class="donut-ring" cx="21" cy="21" r="16" fill="transparent" stroke="#d2d3d4" stroke-width="4"></circle>  
 ``
-第一段：
+<br>
+第一段：<br>
 ``
   <circle class="donut-segment donut-segment-1" cx="21" cy="21" r="16" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>  
 ``
-第二段：
+<br>
+第二段：<br>
 ``
   <circle class="donut-segment donut-segment-2" cx="21" cy="21" r="16" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>  
 ``
-第三段：
+<br>
+第三段：<br>
 ``
   <circle class="donut-segment donut-segment-3" cx="21" cy="21" r="16" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>  
 ``
