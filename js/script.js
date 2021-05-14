@@ -33,6 +33,14 @@ var swiper = new Swiper('#circle-progress-area', {
 //   };
 // }
 
+// side menu
+$(document).on('click','.menu-type-toggle',function(){
+  var $this = $(this);
+  $this.toggleClass('menu-type-toggle-open');
+  $this.next('.menu-type-group').slideToggle()
+
+})
+
 // slim select
 var selectElement = document.querySelectorAll('.select');
 for(var i=0; i < selectElement.length; i++){
